@@ -1,27 +1,8 @@
-import { Counter } from './features/counter/Counter';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom'
+import { Counter } from './features/counter/Counter'
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <>
-                <Counter />
-              </>
-            )}
-          />
-        </Switch>
-      </div>
-    </Router>
-  );
+    <Counter />
+  )
 }
-export default App;
+export default App
